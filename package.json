@@ -1,0 +1,11 @@
+{
+  "name": "agent-theater",
+  "version": "3.0.0",
+  "description": "Watch Claude Code work as a cinematic, holographic show — with sound, Arabic/English, and approvals you answer from the stage.",
+  "keywords": ["claude-code", "claude", "ai-agent", "visualization", "hooks", "developer-tools", "arabic"],
+  "license": "MIT",
+  "bin": { "agent-theater": "bin/cli.js" },
+  "files": ["bin", "lib", "web/theater.html", "Agent Theater.vbs", "Stop Agent Theater.vbs", "Agent Theater.command", "Stop Agent Theater.command", "README.md", "README.ar.md", "LICENSE"],
+  "engines": { "node": ">=18" },
+  "scripts": { "build": "node scripts/build.js", "start": "node bin/cli.js" }
+}

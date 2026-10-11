@@ -1,0 +1,83 @@
+<div id="glow" aria-hidden="true"></div>
+<canvas id="bg" aria-hidden="true"></canvas>
+<div class="fx" aria-hidden="true"></div>
+<div class="app">
+  <div class="scene">
+    <div class="hud">
+      <div class="brand">
+        <div class="top"><h1 data-i="title">مسرح الوكيل</h1><span class="pill" id="conn"></span><span class="pill rp" id="rpBadge" hidden></span></div>
+        <div class="req" id="req"></div>
+      </div>
+      <div class="stats">
+        <div class="stat"><span id="sFiles">0</span><small data-i="stFiles"></small></div>
+        <div class="stat add"><span id="sAdd">+0</span><small data-i="stAdd"></small></div>
+        <div class="stat del"><span id="sDel">−0</span><small data-i="stDel"></small></div>
+        <div class="stat"><span id="sTime">00:00</span><small data-i="stTime"></small></div>
+      </div>
+    </div>
+    <div class="prog" id="prog" hidden><div class="trk"><i></i></div><b>0%</b><span></span></div>
+    <svg class="plan" id="plan" viewBox="0 0 1000 116" role="img" data-i-aria="planAria"></svg>
+    <div class="stage" id="stage">
+      <div class="idle" id="idle"><div><div class="big" data-i="idleBig"></div><p id="idleSub"></p></div></div>
+      <div class="drift" id="drift"><div class="world" id="world"></div></div>
+      <div class="flash" id="flash"></div>
+    </div>
+  </div>
+  <div class="thought" aria-live="polite">
+    <div class="orb" aria-hidden="true"></div>
+    <div class="txt"><small id="tLabel"></small><p id="tText"></p></div>
+    <div class="ctrls">
+      <button class="ctrl" id="bSound" aria-pressed="true" data-i="cSound"></button>
+      <button class="ctrl" id="bTheme"></button>
+      <button class="ctrl opt" id="bVol"></button>
+      <button class="ctrl opt" id="bPlan"></button>
+      <button class="ctrl opt" id="bQual"></button>
+      <button class="ctrl lang" id="bLang"></button>
+      <button class="ctrl hi" id="bDemo" data-i="cDemo"></button>
+      <button class="ctrl opt" id="bOpen" data-i="cOpen"></button>
+      <button class="ctrl hi" id="bRec"></button>
+      <button class="ctrl hi" id="bSave" data-i="cSave" hidden></button>
+    </div>
+  </div>
+</div>
+<input type="file" id="fileIn" accept=".json,application/json" hidden>
+
+<div class="reveal" id="reveal" hidden></div>
+
+<div class="titlecard" id="tcard" hidden><div><div class="k" id="tcK"></div><div class="t" id="tcT"></div><div class="nums" id="tcN" hidden></div><div class="st" id="tcS"></div><div class="bar"></div></div></div>
+
+<div class="overlay" id="intro">
+  <div class="card">
+    <div class="eyebrow">Claude Code · live</div>
+    <h2 data-i="title"></h2>
+    <p id="introP"></p>
+    <div class="row"><button class="btn" id="bEnter" data-i="bEnter"></button><button class="btn ghost" id="bDemo2" data-i="bDemo2"></button></div>
+    <div class="row"><button class="btn ghost small" id="bOpen2" data-i="cOpen"></button><button class="btn ghost small" id="bLang2"></button></div>
+  </div>
+</div>
+
+<div class="overlay gate" id="gate" hidden>
+  <div class="card">
+    <div class="siren" aria-hidden="true"></div>
+    <h2 data-i="gateH"></h2>
+    <p id="gQ"></p>
+    <div class="cmd" id="gCmd"></div>
+    <div class="cd" id="gCd"></div>
+    <div class="row">
+      <button class="btn" id="gYes" data-i="gYes"></button>
+      <button class="btn no" id="gNo" data-i="gNo"></button>
+    </div>
+    <button class="btn ghost" id="gTerm" data-i="gTerm"></button>
+  </div>
+</div>
+
+<div class="overlay" id="saveDlg" hidden>
+  <div class="card">
+    <h2 data-i="saveH"></h2>
+    <p data-i="saveP"></p>
+    <label class="check"><input type="checkbox" id="redact" checked><span data-i="saveRedact"></span></label>
+    <div class="row"><button class="btn" id="bDl" data-i="saveDl"></button><button class="btn ghost" id="bDlCancel" data-i="cancel"></button></div>
+    <p class="small" data-i="saveHint"></p>
+  </div>
+</div>
+<div class="drop" id="drop" hidden data-i="drop"></div>
