@@ -24,6 +24,8 @@ That's the whole setup (or, without a terminal: download the repo and double-cli
 
 Requires Node.js 18+ and Claude Code (the terminal, or a **Local** session in the Claude desktop app's Code tab).
 
+**Where it works:** Claude Code in the terminal, and **Local** sessions in the Code tab of the Claude desktop app (tested there). It does **not** work with regular claude.ai chat, which has no hooks, nor with cloud sessions, which can't reach your machine. Tested on Windows with the desktop app; macOS, Linux and the terminal should behave the same but are not yet verified. Please open an issue if something differs.
+
 ## Step by step
 
 **Windows**
