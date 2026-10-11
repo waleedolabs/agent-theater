@@ -16,11 +16,22 @@ Agent Theater turns a Claude Code session into a live, cinematic show: the agent
 
 ## Run it
 
+Pick one. Both need [Node.js](https://nodejs.org) 18+ and Claude Code.
+
+**A. From the terminal (one command, nothing to download):**
+
 ```bash
 npx github:waleedolabs/agent-theater
 ```
 
-That's the whole setup (or, without a terminal: download the repo and double-click **`Agent Theater.vbs`** on Windows or **`Agent Theater.command`** on macOS. It runs in the background with no window and opens the stage; use the matching `Stop Agent Theater` file to stop it. On macOS the first time, right-click → Open to get past the unsigned-file warning). On the first run it connects itself to Claude Code (it adds a few local hooks to `~/.claude/settings.json` and keeps a backup), starts a small local server and opens the stage in your browser. Restart any open Claude Code session, then work as usual.
+**B. From a download (no terminal):**
+1. On this page click the green **Code** button, then **Download ZIP**, and unzip it.
+2. Double-click **`Agent Theater.vbs`** on Windows, or **`Agent Theater.command`** on macOS (first time: right-click → Open).
+3. Windows may warn "Unknown publisher" because the file is not code-signed: click **More info → Run anyway**. It is a small plain-text script you can read first.
+
+It runs in the background with no window and opens the stage in your browser. To stop it, use the matching **`Stop Agent Theater`** file (or `npx github:waleedolabs/agent-theater stop`).
+
+On the first run it connects itself to Claude Code (it adds a few local hooks to `~/.claude/settings.json` and keeps a backup) and starts a small local server. Restart any open Claude Code session, then work as usual.
 
 Requires Node.js 18+ and Claude Code (the terminal, or a **Local** session in the Claude desktop app's Code tab).
 
